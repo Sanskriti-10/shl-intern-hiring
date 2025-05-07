@@ -1,6 +1,6 @@
 # shl-intern-hiring
 
-🔍 1. Libraries Used and Why
+ 1. Libraries Used and Why
 Library	Purpose	Why It’s Used
 pandas, numpy	Data manipulation	To handle and transform data from .csv files and manage feature arrays.
 librosa	Audio processing	Industry-standard Python library to extract meaningful features from .wav audio files.
@@ -9,7 +9,7 @@ sklearn.ensemble.GradientBoostingRegressor	Machine learning model	A powerful and
 sklearn.metrics.mean_squared_error	(Optional) Evaluation metric	Measures how close predictions are to actual values.
 tqdm	Progress visualization	Adds a progress bar to long loops (like extracting features for all audio files), improving user experience.
 
-🎧 2. Audio Features Extracted and Why
+ 2. Audio Features Extracted and Why
 The notebook uses feature engineering — manually extracting key characteristics from audio signals using librosa.
 
 Feature	Explanation	Why It Helps
@@ -22,8 +22,8 @@ Spectral Rolloff	Frequency below which a large portion of the spectrum lies	Capt
 MFCCs (1st and 2nd)	Mel-frequency cepstral coefficients, summarizing audio shape in human-like hearing scale	Common in speech and emotion detection, helps characterize speaker style.
 
 
-🏗️ 3. Model Used: Gradient Boosting Regressor
-✅ Why Gradient Boosting?
+ 3. Model Used: Gradient Boosting Regressor
+Why Gradient Boosting?
 Handles small tabular datasets well
 
 Good performance without deep learning
@@ -35,8 +35,7 @@ Less prone to overfitting than plain decision trees
 No need for heavy GPU or long training times
 
 This model is a good baseline when you're working with structured, hand-crafted features like these.
-
-🧪 4. Training and Prediction
+ 4. Training and Prediction
 What’s Done:
 Loops through each training .wav file
 
